@@ -5,12 +5,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-:root{
-    color: hsl(158, 36%, 37%);
-    color: hsl(30, 38%, 92%);
-    color: hsl(212, 21%, 14%);
-}
-
 body{
     display: grid;
     grid-template-columns: 1fr 1fr;
