@@ -23,7 +23,7 @@ img{
 }
 
 .img-container{
-    background-image: url(design/desktop-design.jpg);
+    background-image: url(images/image-product-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@ img{
 .text-container{
     display: flex;
     flex-direction: column;
-    padding: 4rem;
+    padding: 5rem;
     gap: 3rem;
 }
 
@@ -70,7 +70,7 @@ img{
 }
 
 .new-price{
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     color: hsl(158, 36%, 37%);
 }
@@ -81,4 +81,27 @@ img{
 
 button{
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    gap: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(157, 52%, 20%);
+}
+
+.button-text{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.button-icon{
+    width: 1.2rem;
 }
