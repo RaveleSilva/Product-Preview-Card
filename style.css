@@ -6,9 +6,19 @@
 }
 
 body{
+    height: 100%;
+    display: flex;
+    background-color: #f3eae3;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    border-radius: 8px;
+    background-color: white;
 }
 
 img{
@@ -21,23 +31,25 @@ img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-radius: 8px 0px 0px 8px;
 }
 
 .text-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4rem 1.5rem;
+    padding: 2rem;
 }
 
 .inside-container{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .category{
-    font-size: 1.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
     letter-spacing: 8px;
     color: hsl(158, 36%, 37%);
     color: hsl(30, 38%, 92%);
@@ -46,10 +58,10 @@ img{
 }
 
 .title{
-    font-size: 4rem;
+    font-size: 2rem;
     max-width: 10ch;
     color: hsl(212, 21%, 14%);
-    line-height: 4rem;
+    line-height: 2.3rem;
 }
 
 .title, .new-price{
@@ -58,19 +70,19 @@ img{
 
 .description{
     max-width: 24ch;
-    font-size: 1.7rem;
+    font-size: 1rem;
     color: hsl(228, 12%, 48%);
-    line-height: 2.5rem;
+    line-height: 1.4rem;
 }
 
 .price{
     display: flex;
     align-items: center;
-    gap: 2.4rem;
+    gap: 1.5rem;
 }
 
 .new-price{
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 700;
     color: hsl(158, 36%, 37%);
 }
@@ -80,16 +92,16 @@ img{
 }
 
 button{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     border-radius: 10px;
-    border: none;
     background-color: hsl(158, 36%, 37%);
     gap: 1rem;
     cursor: pointer;
+    border: none;
 }
 
 button:hover{
@@ -107,14 +119,16 @@ button:hover{
 }
 
 @media (max-width: 750px){
-    body{
+    main{
         grid-template-columns: 1fr;
     }
 
     .img-container{
         background-image: url(images/image-product-mobile.jpg);
-        height: 50vh;
         background-position: center;
+        border-radius: 8px 8px 0px 0px;
+        background-color: red;
+        height: 300px;
     }
 
     .title{
