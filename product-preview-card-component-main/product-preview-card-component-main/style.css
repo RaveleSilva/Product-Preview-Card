@@ -31,8 +31,14 @@ img{
 
 .text-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+}
+
+.inside-container{
+    display: flex;
     flex-direction: column;
-    padding: 5rem;
     gap: 3rem;
 }
 
@@ -104,4 +110,24 @@ button:hover{
 
 .button-icon{
     width: 1.2rem;
+}
+
+@media (max-width: 750px){
+    body{
+        grid-template-columns: 1fr;
+    }
+
+    .img-container{
+        background-image: url(images/image-product-mobile.jpg);
+        height: 50vh;
+        background-position: center;
+    }
+
+    .title{
+        max-width: 13ch;
+    }
+
+    .description{
+        max-width: 30ch;
+    }
 }
